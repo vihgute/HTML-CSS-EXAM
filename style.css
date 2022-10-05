@@ -1,7 +1,338 @@
-h1{
-    color:rgb(30, 0, 255);
-    background: rgb(255, 223, 14);
-   }
-a{
-    color:red; /*https://yizzle.com/whatthehex/?n=2*/
-   }
+header{
+    height: 106px ;
+}    
+@media screen and (max-width: 768px) {
+    header {
+    padding: 0;
+    margin: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+body{
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: 'Inter', sans-serif;
+} 
+} 
+@media screen and (max-width: 768px) { 
+    body {
+        display: inline-flexbox;
+        justify-content: 100%vw;
+        padding-top: 34px;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    header, .block1, .images, .block3, .block4, .block5, footer{ 
+        padding-left: 32px;   
+        margin-left: 0;     
+    }  
+}
+header nav a {
+    display: none;
+    text-decoration: none;
+ 
+  }  
+a:hover{
+    color: #FF3998;
+}
+a:last-of-type{
+    color: #FF3998;
+}    
+h6{
+    color: #FF3998;
+    letter-spacing: 0.15em;
+    font-size: 15px;
+}   
+.block1{
+    display: grid;
+    grid-template-columns: 60% 120%;
+} 
+@media screen and (max-width: 768px) {
+    h6 {
+        font-size: 8px;
+    }   
+    h1 {
+        font-size: 30px;
+    }  
+    header{
+        height: fit-content;
+    }    
+    .logo1{
+       max-width: 50%;
+       max-height: 50%;
+    }    
+}
+@media screen and (max-width: 768px) {
+    .container1 h1, p { 
+        display: flex ;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container1{
+    padding-top: 20%;
+}
+}
+.container1 h1 p img{ 
+    display: flexbox;  
+    align-items: center;
+    max-height: 600px;
+}
+@media screen and (max-width: 768px) {
+    .block1{
+        display: grid;
+        grid-template-columns: 60% 80%;
+    } 
+    .container1 .container2 .container3 .container4 {
+        width: 100%vw;
+        height: 100%vh;
+        max-height: 300px;
+        content-visibility: cover;
+    }
+    .graphic{
+        display: flex;
+        align-items: center ;
+        max-height : 380px;
+        width: 30%vw;
+        content-visibility: cover;
+    }
+    .container2{
+        display: flex;
+        justify-content: center ;
+    }     
+}
+.span{
+    display: 50%;
+    font-size: 40px;
+    color: #111111;
+    max-width: 500px;
+}  
+@media screen and (max-width: 768px) {
+    .span{
+        display: 70%;
+        font-size: 25%;
+}
+}
+.button{
+    size: 12%;
+    border-style: solid;
+    border-color:  orange yellow red rgb(240, 74, 101);
+    border-inline-end-color: initial;
+    border-width: 2px;
+    border-radius: 3em;
+    padding-left : 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #FFFFFF; 
+    }
+.block2{
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+    min-height: 100px;
+    border-radius: 1em;
+    padding-top: 100px;
+    padding-left: 30px;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width: 768px) {
+.block2 { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    border: none;
+    border-radius: 0;
+}
+p {
+    font-size: 105%;
+    margin-bottom: 5%;
+}
+h3 {
+font-size: 180%;
+margin: 0;
+}
+}
+.images{
+    size: 25%;
+    display: flex;
+    justify-content: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15px;
+    padding: 5% 0;
+}
+.opensea { 
+    color: #999999;
+    text-decoration: none;
+    border-bottom: 2px solid lightgrey;
+}  
+@media (max-width: 768px) {
+    .images { 
+        display: flex;
+        justify-content: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .last {
+        display: none;
+    } 
+    .opensea{ 
+        color: #999999;
+        text-decoration: none;
+        border-bottom: 2px solid lightgrey;
+    }       
+}    
+   @media (min-width: 768px) {
+    header .container {
+    display: flex;
+    justify-content: space-between;
+    }
+    header .container {
+      padding: 0;
+    }
+    header nav a {
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1em;
+    }
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}    
+.block4{
+    display: block;
+    padding-top: 3%;
+}
+.anim1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+    background-color: grey;
+    }
+.orange{
+    color: orange;
+}
+.grey{
+    color: lightgrey;
+}
+.container3 h1, p, img{ 
+    display: flex;
+    align-items: center ;
+    max-height: 600px ;
+}   
+.paragr {
+    display: inline;
+    align-items: row;
+}     
+.block5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    margin-top: 10%;
+    border-top : 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    width: 50%vw;
+}
+.image {
+    width: 50%vw;
+    max-height: 75%; 
+} 
+footer { 
+   display: flexbox;
+   align-items: center;
+   padding-top: 10%;
+}  
+footer a{ 
+    color: #999999;
+}
+footer a:hover{ 
+    color: rgb(40, 13, 161);
+}
+footer a:last-of-type{
+    color: #999999;
+}  
+.block6 { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+.nav{
+    display: flexbox;
+    word-spacing: 10%;
+    justify-content: row;
+    align-items: center;
+    size: 100px;
+}  
+.iconcontainer{
+    display: flex;
+    justify-self: flex-start;
+    padding-left: 2%;
+    padding-right: 2%;
+    list-style: none;
+}   
+div ul a .iconcontainer{
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+}  
+.columns{
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}  
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: gray;
+}
+.links li:first-of-type {
+    padding-bottom: 2%;
+    color: grey;
+}
+ul li {
+    list-style-type: none;
+    line-height: 4vh;
+}
+ul li a {
+    color: grey;
+    text-decoration: none;
+}
+.nav2 {
+    width: 180px;
+    padding: 0 2vh;  
+}
+@media screen and (max-width:768px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }   
+    .nav2 {
+        padding: 0 2vh;
+        width: 70px;
+    }
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+} 
+@media screen and (max-width:768px) {
+    .paragr2  { 
+    display: none;
+}
+}
